@@ -186,3 +186,10 @@ SELECT * FROM commentaire
 INNER JOIN film ON commentaire.id_film = film.id 
 INNER JOIN user ON commentaire.id_user = user.id
 WHERE id_film = 43;
+
+Request 5
+
+DELETE FROM film WHERE `slug` LIKE "t%%";
+
+Request 6
+SELECT DISTINCT id_user FROM `commentaire`
