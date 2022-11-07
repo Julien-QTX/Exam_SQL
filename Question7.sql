@@ -1,1 +1,1 @@
-SELECT * FROM film INNER JOIN films_categs on id_film WHERE id_categorie=51
+SELECT * FROM film INNER JOIN films_categs ON id_film= film.id WHERE id_categorie = 51

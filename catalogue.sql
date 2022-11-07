@@ -195,7 +195,7 @@ SELECT DISTINCT id_user, user.* FROM commentaire
 INNER JOIN user ON commentaire.id_user = user.id
 
 Request 7
-SELECT * FROM film INNER JOIN films_categs on id_film WHERE id_categorie=51
+SELECT * FROM film INNER JOIN films_categs ON id_film= film.id WHERE id_categorie = 51
 
 Request 8
 SELECT AVG(note) FROM commentaire
@@ -204,4 +204,7 @@ Request 9
 SELECT * FROM film WHERE date_sortie = MONTH(06)
 
 Request 10
-SELECT id FROM `user` WHERE role = 1
+SELECT DISTINCT user.* FROM commentaire 
+INNER JOIN user ON commentaire.id_user = user.id
+INNER JOIN film ON commentaire.id_film = film.id
+WHERE role = 1 
