@@ -193,3 +193,11 @@ DELETE FROM film WHERE `slug` LIKE "t%%";
 
 Request 6
 SELECT DISTINCT id_user FROM `commentaire`
+
+Request 7
+SELECT FROM film INNER JOIN films_categs on id_film where id_categorie=51
+
+Request 8
+SELECT AVG(note) FROM commentaire
+
+Request 9
