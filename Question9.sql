@@ -1,1 +1,0 @@
-SELECT * FROM film WHERE date_sortie = MONTH(06)

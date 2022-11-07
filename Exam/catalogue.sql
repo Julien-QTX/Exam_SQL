@@ -201,7 +201,7 @@ Request 8
 SELECT AVG(note) FROM commentaire
 
 Request 9
-SELECT * FROM film WHERE date_sortie = MONTH(06)
+SELECT * FROM `film` WHERE MONTH(date_sortie)=06
 
 Request 10
 SELECT DISTINCT user.* FROM commentaire 

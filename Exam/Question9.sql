@@ -1,0 +1,1 @@
+SELECT * FROM `film` WHERE MONTH(date_sortie)=06
