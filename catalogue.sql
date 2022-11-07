@@ -188,7 +188,6 @@ INNER JOIN user ON commentaire.id_user = user.id
 WHERE id_film = 43;
 
 Request 5
-
 DELETE FROM film WHERE `slug` LIKE "t%%";
 
 Request 6
@@ -196,7 +195,7 @@ SELECT DISTINCT id_user, user.* FROM commentaire
 INNER JOIN user ON commentaire.id_user = user.id
 
 Request 7
-SELECT FROM film INNER JOIN films_categs on id_film where id_categorie=51
+SELECT * FROM film INNER JOIN films_categs on id_film WHERE id_categorie=51
 
 Request 8
 SELECT AVG(note) FROM commentaire
